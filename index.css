@@ -1,0 +1,345 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow',sans-serif;
+    max-width: 375px;
+    overflow-x: hidden;
+}
+
+.mainContainer {
+    display : flex;
+    flex-direction: column;
+}
+
+.header {
+    display : flex;
+    justify-content: space-between;
+    margin-inline : 25px;
+    margin-block : 30px 80px;
+}
+
+.header > button {
+    background-color: #e8eff2;
+    padding : 15px;
+    border : none;
+    border-radius: 5px;
+    color : #162542;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition : 0.3s ease-in-out;
+}
+
+.header > button:hover {
+    background-color: #162542 ;
+    color : #fff;
+    cursor: pointer;   
+}
+
+.upperContainer {
+    display : flex;
+    flex-direction: column;
+    margin-block : 0 25px;
+    margin-inline : 25px; 
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    color : #162542;
+}
+
+p {
+    font-weight: 500;
+    color : #788bad;
+    line-height: 1.5em;
+    margin-block : 20px;
+}
+
+
+.buttonContainer {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.buttonContainer > button {
+    background-color: #f16718;
+    color : #fff;
+    border : none;
+    border-radius: 5px;
+    padding : 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+
+}
+
+.buttonContainer > p {
+    margin : 0;
+    padding : 0;
+}
+
+.buttonContainer > button:hover {
+    background-color: #FF9B62;
+    cursor: pointer;
+}
+
+.keyboardTop {
+    width : 130%;
+    height : 330px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('./assets/mobile/image-keyboard.jpg');
+    border-radius: 15px;
+}
+
+.square {
+    display : none;
+}
+
+.middleContainer {
+    display : flex;
+    flex-direction: column;
+}
+
+.upperSection {
+    display : flex;
+}
+
+.hero1 {
+    width : 150px;
+    height : 193px;
+    border-radius: 15px;
+    margin-inline: -30px 25px;
+    filter: saturate(4);
+    background-image: url('./assets/mobile/image-phone-and-keyboard.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero2 {
+    height : 200px;
+    width : 200px;
+    border-radius: 15px;
+    background-image: url('./assets/mobile/image-glass-and-keyboard.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heroDescription {
+    text-align: center;
+    margin-top : 80px;
+    margin-inline : 35px;
+}
+
+.lowerContainer {
+    display : flex;
+    flex-direction: column;
+    margin-inline: 25px;
+    margin-top : 30px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card > img {
+    background-color: #f16718;
+    padding : 23px;
+    border-radius: 15px;
+    margin-block : 60px 48px;
+}
+
+.card > h2 {
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    color : #162542;
+    padding-inline : 90px;
+}
+
+footer {
+    text-align: center;
+    margin-block : 100px 50px;
+    color : #788bad;
+}
+
+@media screen and (min-width : 768px) {
+    body {
+        min-width : 768px;
+    }
+    
+    .upperContainer {
+        flex-direction: row;
+    }
+
+    .headerTop {
+        display : flex;
+        flex-direction: column;
+        margin-right : 80px;
+        justify-content: center;
+    }
+
+    .keyboardTop {
+        background-image: url('./assets/tablet/image-keyboard.jpg');
+        margin-right : -60px;
+    }
+
+    .hero1 {
+        margin-inline: 0;
+        height : 319px;
+        width : 200px;
+        background-size: cover;
+        background-image: url('./assets/tablet/image-phone-and-keyboard.jpg');
+        margin-right: 30px;
+    }
+    
+    .hero2 {
+        height : 319px;
+        width : 440px;
+        background-image: url('./assets/tablet/image-glass-and-keyboard.jpg');
+        background-size: cover;
+    }
+    .upperSection {
+        margin-inline : 25px;
+    }
+
+    .heroDescription {
+        display : flex;
+    }
+
+    .heroDescription > h1,p {
+        text-align: left;
+    }
+
+    .heroDescription > h1 {
+        font-size: 30px;
+    }
+
+    .heroDescription > p {
+        padding-left : 60px;
+    }
+    .lowerContainer {
+        display : grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card > h2,p {
+        text-align: left;
+    }
+
+    .card {
+        padding : 30px;
+    }
+
+    .card > h2 {
+        padding-inline : 0 80px;
+    }
+
+    #bluetooth {
+        padding : 0;
+    }
+
+    .card > img {
+        display : flex;
+        justify-content: left;
+        margin-block : 40px 48px;
+    }
+}
+
+@media screen and (min-width : 1400px) {
+    body {
+        min-width: 1400px;
+        overflow-x  : hidden;
+    }
+
+    .square {
+        display : block;
+        height : 240px;
+        width : 180px;
+        margin-left : 180px;
+    }
+
+
+    .keyboardTop {
+        background-image: url('./assets/desktop/image-keyboard.jpg');
+        width : 550px;
+        height : 490px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position : relative;
+        right : -90px;
+    }
+    .header {
+        margin-inline : 195px;
+    }
+
+    .header > button {
+        margin-right : 50px;
+    }
+
+    .headerTop {
+        width: 440px;
+        margin-left : 170px;
+    }
+
+    .middleContainer {
+        flex-direction: row;
+        margin-left : -200px;
+    }
+    .heroDescription {
+        display : flex;
+        flex-direction: column;
+    }
+    .squareBottom {
+        display : block;
+        position: relative;
+        height : 240px;
+        width : 180px;
+        margin-left : 180px;
+        top : 15em;
+    }
+    .heroDescription {
+        width : 200px;
+    }
+    .heroDescription > p {
+        padding-left : 0;
+    }
+    .hero1 {
+        margin-inline: 0;
+        height : 480px;
+        width : 255px;
+        background-size: cover;
+        background-image: url('./assets/desktop/image-phone-and-keyboard.jpg');
+        margin-right: 30px;
+    }
+    
+    .hero2 {
+        height : 480px;
+        width : 450px;
+        background-image: url('./assets/desktop/image-glass-and-keyboard.jpg');
+        background-size: cover;
+    }
+    .lowerContainer {
+        display : grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        /* grid-template-rows: 1fr 1fr; */
+        width : 1000px;
+        margin-left: 150px;
+        overflow : hidden;
+        height : 500px;
+    }
+    #rgb {
+        padding-inline : 0 50px;
+    }
+}
