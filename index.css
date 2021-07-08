@@ -104,6 +104,10 @@ p {
     display : none;
 }
 
+.squareBottom {
+    display : none;
+}
+
 .middleContainer {
     display : flex;
     flex-direction: column;
@@ -223,6 +227,10 @@ footer {
 
     .heroDescription > h1 {
         font-size: 30px;
+    }
+
+    .squareBottom {
+        display : none;
     }
 
     .heroDescription > p {
